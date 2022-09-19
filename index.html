@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super App</title>
+</head>
+<body>
+  
+<script>
+  const div = document.createElement('div')
+
+    const divcontainer = document.createElement('div')
+
+    const ul = document.createElement("ul");
+
+    const item1 = document.createElement('li')    
+    const item2 = document.createElement('li')
+    const item3 = document.createElement('li')
+    const link_1 = document.createElement('a')
+    const link_2 = document.createElement('a')
+    const link_3 = document.createElement('a')
+
+    ul.append(item1,item2,item3)
+    div.append(divcontainer,ul)
+    item1.append(link_1)
+    item2.append(link_2)
+    item3.append(link_3)
+    divcontainer.style.border = '1px solid red'
+    divcontainer.style.borderRadius = '5px'
+    divcontainer.style.padding = '8px'
+    divcontainer.textContent = 'Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Voluptatem incidunt cumque in! In, omnis repellendus.'
+
+    
+
+    div.style.width = '25%'
+    div.style.boxSizing = 'border-box'
+    div.style.margin  = 'auto'
+
+    
+
+    ul.style.display = 'flex'
+    ul.style.justifyContent = 'space-around'
+    ul.style.listStyleType = "none";
+    ul.style.padding = '0px'
+
+    link_1.setAttribute('href',"https://www.google.ru/");
+    link_1.textContent = "google";
+
+    link_2.setAttribute('href',"https://intocode.ru/");
+    link_2.textContent = "intocode";
+
+    link_3.setAttribute('href',"https://www.instagram.com/");
+    link_3.textContent = "instagram";
+
+    
+    document.body.prepend(div)
+
+</script>
+    
+</body>
+</html>
